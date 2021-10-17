@@ -1,0 +1,16 @@
+figure{
+  overflow: hidden;
+}
+.card-img-top{
+  height: 250px;
+  width: 100%;
+  transition: 1.5s;
+  transform: scale(1);
+}
+.card-img-top:hover{
+  transform: scale(1.5);
+}
+.row{
+  float: left;
+  margin-left: 1px;
+}

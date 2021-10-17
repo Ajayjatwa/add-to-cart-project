@@ -1,0 +1,16 @@
+<div class="contsiner">
+  <div class="row" *ngFor ="let pro of products">
+    <div class="col">
+      <div class="card">
+        <figure>
+          <img class="card-img-top" src={{pro.imageUrl}} alt="Card image cap">
+        </figure>
+        <div class="card-body">
+          <h5 class="card-title">{{pro.title}}</h5>
+          <button class="btn btn-primary">Add to Card</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
