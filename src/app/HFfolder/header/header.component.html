@@ -5,7 +5,7 @@
       </i>
       <strong style="font-size: 30px;">Wagons</strong>
       <div class="from-group">
-        <input type="text" class="from-control" placeholder="Search product">
+        <input type="text" class="from-control" [(ngModel)] ="searchTerm" (keyUp) ="search($event)" placeholder="Search product">
       </div>
       <span style="position: relative; left: -32px;" class="fas fa-search search-icon"></span>
 

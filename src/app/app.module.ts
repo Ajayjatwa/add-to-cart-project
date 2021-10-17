@@ -16,6 +16,9 @@ import { BooksComponent } from './products/books/books.component';
 import { FruitsComponent } from './products/fruits/fruits.component';
 import { VegetablesComponent } from './products/vegetables/vegetables.component';
 import { ClothsComponent } from './products/cloths/cloths.component';
+import { FilterPipe } from './shared/filter.pipe';
+import { FormsModule } from '@angular/forms';
+
 
 @NgModule({
   declarations: [
@@ -32,11 +35,13 @@ import { ClothsComponent } from './products/cloths/cloths.component';
     FruitsComponent,
     VegetablesComponent,
     ClothsComponent,
+    FilterPipe,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

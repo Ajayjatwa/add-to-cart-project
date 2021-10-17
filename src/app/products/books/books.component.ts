@@ -12,11 +12,13 @@ export class BooksComponent implements OnInit {
 
 
   // Products :any =[];
-  msg:string ="";
+
+  public productlist :any =[];
+  searchKey:string ="";
 
   constructor(private fakeapi:ApiService, private cart:CartService) { }
 
-  productlist :any =[];
+
   ngOnInit(): void {
     this.fakeapi.Products().subscribe(res =>{
       this.productlist = res;
@@ -26,7 +28,9 @@ export class BooksComponent implements OnInit {
       });
 
     })
-
+    this.cart.search.subscribe((val:any)=>{
+      this.searchKey = val;
+    })
     // this.fakeapi.Products().subscribe(data => this.productlist = data)
   }
 
